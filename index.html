@@ -1,135 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PN2NSR84');</script>-->
-<!-- End Google Tag Manager -->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Background Image Page</title>
+
+    <!-- Add the CSS styles inside the <style> tag or link to an external CSS file -->
     <style>
+        /* Applying the background to the entire page */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            background-image: url('https://envato-shoebox-0.imgix.net/aa27/5000-94b9-4343-835f-f0e0ef090f71/DSC_1721.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=9c0014953bd0e3f378537b688f64a9d8');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1726843484548-9ff6b69f8fd7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhbGwlMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D'); /* Replace with the actual image URL */
+            background-size: cover; /* Ensures the image covers the whole background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
         }
-
-        .container {
-            text-align: center;
-            padding: 5% 0;
-            width: 55%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        #botscrew-chat-frame {
-            min-width: 100%;
-            /* Use 100% width to make it responsive */
-            width: 100%;
-            /* Set a maximum width if needed */
-            height: 450px;
-            border: none;
-        }
-
-        .submitVercelUrlBtn {
-            height: 50px;
-            width: max-content;
-            margin-top: 16px;
-        }
-
-        h1 {
-            color: white;
-        }
-        
-        /* Media query for smaller screens (e.g., tablets) */
-    @media (max-width: 768px) {
-        .container {
-                  padding: 10% 0; /* Adjust padding for tablets */
-                  width: 100%;
-         }
-
-       #botscrew-chat-frame {
-                           height: 450px; /* Adjust the iframe height for tablets */
-         }
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .container {
-                  padding: 10% 0; /* Adjust padding for tablets */
-                  width: 100%;
-         }
-
-       #botscrew-chat-frame {
-                           height: 600px; /* Adjust the iframe height for tablets */
-         }
-    }
-
-  
-        
-
-
-    #botscrew-chat-frame {
-        height: 450px; /* Adjust the iframe height for tablets */
-    }
-}
     </style>
 </head>
-
 <body>
-    <!--<script
-      type="text/javascript"
-      id="chatbot-initials-script"
-      src="https://noform-ai-chat-bubble-git-nfa-473-widget-7a32be-hembara-s-team.vercel.app/script-chatbot.js"
-      data-server-url="https://app.noform.ai"
-      data-bot-id="65afcfbfb64ff6ee4dc7addb"
-    ></script>-->
-    <!-- Google Tag Manager (noscript) -->
- <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN2NSR84"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
-<!-- End Google Tag Manager (noscript) -->
-    <div class="container">
-        <div style="margin-top: 24px; min-height: 500px; background: pink; width: 100%">
-            <p>500px height div</p>
-        </div>
-        
-        <p>How to update iframe source to feature branch url(vercel):</p>
-        <ul>
-            <li><a href="https://vercel.com/hembara-s-team" target="_blank"><strong>bep-embedded-ai-chat</strong></a></li>
-            <li>Click on three dot menu -> Copy Branch URL</li>
-            <li>Insert to the input beneath and press submit</li>
-        </ul>
-        <label for="inputURL">
-            Pay attention that you don't need to add protocol or trailing slash
-            Just add URL as you copy from the vercel in format:
-            <span style="display: block;">
-                <strong>
-                    bep-embedded-ai-chat-git-bp-2664-add-chat-6b7afc-hembara-s-team.vercel.app</strong></span>
-
-            <input id="inputURL" type="text" class="vercelUrl" placeholder="Vercel branch feature URL">
-        </label>
-
-        <button class="submitVercelUrlBtn">Update iframe source URL</button>
-        <script defer src="./index.js"></script>
-       
-    </div>
-    <script defer type="text/javascript" id="chatbot-initials-script" src="https://noform-ai-chat-bubble-git-nfa-616-update-b992d4-hembara-s-team.vercel.app/script-chatbot.js"
-    data-server-url="https://noform-ai-admin-git-nfa-583-fixes-hembara-s-team.vercel.app"
-    data-bot-id="66057bed6a7cbc2e897017a8"></script>
+    <h1>Welcome to My Website</h1>
+    <p>This website has a background image!</p>
 </body>
-
 </html>
